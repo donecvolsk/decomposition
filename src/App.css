@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1270px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.topContent {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  width: 72%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.topTitle {
+  display: flex;
+  width: 100%;
+}
+
+.topTitle-item {
+  width: 22%;
+  
+  text-decoration: none;
+  color: blue;
+}
+
+.topTitle-item:hover {
+  color: mediumblue
+}
+
+.date {
+  width: 30%;
+  margin-left: 10px;
+}
+
+.newsListContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.icon { 
+  height: 16px;
+  object-fit: scale-down;
+}
+
+.imgTop {
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+.stockPrises-list {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
+.stockPrises-item {
+  display: flex;
+}
+
+.prise {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.percent {
+  color: rgb(130, 127, 127);
+}
+
+.topContent-right {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+
+/*поиск*/
+.searchContainer {
+ width: 90%;
+ margin-bottom: 20px;
+}
+
+.searchBar {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 110px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchYandex {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.ya {
+  color: red;
+}
+
+.searchInput {
+  width: 66%;
+  height: 30px;
+  border: 3px solid yellow;
+}
+
+.searchButton {
+  text-align: center;
+  font-size: inherit;
+  height: 30px;
+  line-height: 32px;
+  width: 60px;
+  background: yellow;
+  position: relative;
+  color: black;
+  outline: none;
+ }
+ .searchButton:after {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  left: 60px; bottom: 0px; /* Положение треугольника */
+  border: 15px solid transparent; /* Прозрачные границы */
+  border-left: 10px solid yellow; /* Добавляем треугольник */
+ }
+
+
+.searchText {
+  color: black;
+  font-weight: 500;
+  padding-left: 110px;
+}
+
+.gray {
+  color: gray;
+}
+
+/*Баннер*/
+.bannerContainer {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-right: 12%;
+}
+
+.bannerImg {
+  width: 100%;
+}
+
+/*стили для нижнего блока*/
+.lowerContainer {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.columnLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnLeft-firstBox {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.columnLeft-leftColumn {
+  display: flex;
+}
+.columnLeft-img {
+  height: 40px;
+}
+
+.columnCenter-firsInfo {
+  margin-bottom: 10px;
+}
+
+.imgTV {
+  height: 17px;
+}
+
+.columnCenter-secondItem, .columnRight-item, .columnLeft-secondItem {
+  margin-top: 7px;
+}
+
+

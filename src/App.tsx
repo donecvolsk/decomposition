@@ -1,9 +1,8 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-import { TopContent } from "./components/TopContent";
-import { Search } from "./components/Search";
-import { Banner } from "./components/Banner";
-import { LowerContent } from "./components/LowerContent";
+
+import { TopContent } from "./Contayners/TopContent";
+import { Search } from "./Contayners/Search";
+import { Banner } from "./components/banners/Banner";
+import { LowerContent } from "./Contayners/LowerContent";
 import './App.css'
 
 // пропсы для компонента TopContent
@@ -29,6 +28,11 @@ export const topcontent = {
     {name: 'EUR MOEX', prise: 63.52, percent: "+" + 0.14},
     {name: 'НЕФТЬ', prise: 64.90, percent: "+" + 1.63 + "%"},
   ]
+ }
+
+ export const search = {
+  nameButton: "поиск",
+  navBarTiitle: ["Видео", "Картинки", "Новости", "Карты", "Маркет", "Переводчик", "Эфир", "ещё",]
  }
 
  const banner = 'baners/2222235.png'; //баннер для компонента Banner
@@ -73,11 +77,10 @@ export const topcontent = {
  }
 
 function App() {
-  //const [count, setCount] = useState(0)
   return (
     <>
       <TopContent top={topcontent} />
-      <Search />        
+      <Search srh={search}/>        
       <Banner bn={banner} />
       <LowerContent lc={lowerContent} />              
     </>
